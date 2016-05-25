@@ -27,7 +27,7 @@ public class LoadAndSigned extends View {
 
     private void init(AttributeSet attrs, int defStyle) {
         // Load attributes
-
+//asd
     }
 
 }
