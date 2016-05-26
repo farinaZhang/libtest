@@ -9,6 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center_horizontal"
     android:orientation="vertical">
+
+    <com.farina.farinaimagelib.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+      />
     <EditText
         android:id="@+id/user_id"
         android:layout_width="@dimen/input_box_width"
