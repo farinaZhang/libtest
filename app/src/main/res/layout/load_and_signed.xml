@@ -1,58 +1,103 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myXML="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background_login"
-    android:orientation="vertical">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:gravity="center_horizontal"
+    android:padding="@dimen/view_padding"
     android:orientation="vertical">
 
-    <com.farina.farinaimagelib.CircleImageView
+    <LinearLayout  android:id="@+id/edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true">
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="@dimen/input_box_height"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="10dp"
+            android:background="@drawable/white_input_box"
+            android:hint="@string/load_input_name"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_normal"
+            android:inputType="none"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/user_psw"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="@dimen/input_box_height"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="10dp"
+            android:background="@drawable/white_input_box"
+            android:hint="@string/load_input_password"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_normal"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="@dimen/load_btn_width"
+            android:layout_height="@dimen/line_height"
+            android:text="@string/signin"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/font_size_normal"
+            android:background="@drawable/load_btn"/>
+    </LinearLayout>
+
+    <com.farina.farinaimagelib.ViaImageView
         android:id="@+id/user_img"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@mipmap/ic_launcher"
-      />
-    <EditText
-        android:id="@+id/user_id"
-        android:layout_width="@dimen/input_box_width"
-        android:layout_height="@dimen/input_box_height"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:background="@drawable/white_input_box"
-        android:hint="@string/load_input_name"
-        android:gravity="center_vertical"
-        android:textSize="@dimen/input_size_32"
-        android:inputType="none"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/edit_view"
+        android:layout_marginBottom="40dp"
+        myXML:shapeType="2"
+        myXML:borderWidth="5dip"
+        myXML:borderColor="#ff0000"
+        android:src="@mipmap/user_img"
+        />
 
-    <EditText
-        android:id="@+id/user_psw"
-        android:layout_width="@dimen/input_box_width"
-        android:layout_height="@dimen/input_box_height"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:background="@drawable/white_input_box"
-        android:hint="@string/load_input_password"
-        android:gravity="center_vertical"
-        android:textSize="@dimen/input_size_32"
-        android:inputType="textPassword"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/loagin"
+                android:textSize="@dimen/font_size_normal"
+                android:layout_alignParentLeft="true"
+                android:text="注册"
+                />
+            <Button android:id="@+id/nopsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/loagin"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/font_size_normal"
+                android:text="忘记密码"
+                />
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/btn_signIn"
-        android:layout_width="@dimen/load_btn_width"
-        android:layout_height="@dimen/load_btn_height"
-        android:text="@string/signin"
-        android:gravity="center"
-        android:textSize="@dimen/input_size_32"
-        android:background="@drawable/load_btn"/>
-    <Button
-        android:id="@+id/btn_load"
-        android:layout_width="@dimen/load_btn_width"
-        android:layout_height="@dimen/load_btn_height"
-        android:text="@string/load"
-        android:gravity="center"
-        android:textSize="@dimen/input_size_32"
-        android:background="@drawable/load_btn"/>
-</LinearLayout>
-</LinearLayout>
+        <Button android:id="@+id/other"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/loagin"
+            android:textSize="@dimen/font_size_normal"
+            android:text="其他方式登录"
+            android:layout_gravity="right|bottom" />
+    </LinearLayout>
+</RelativeLayout>

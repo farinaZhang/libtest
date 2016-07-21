@@ -8,13 +8,24 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.farina.activity.UserLoadOnActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name="com.farina.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.farina.activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.farina.activity.BindingUserInfoActivity" />
+        <activity android:name="com.farina.activity.ChangeUserPicActivity" />
+        <activity android:name="com.farina.activity.ShowInOtherStyleActivity" />
+        <activity android:name="com.farina.activity.InstantChatActivity"></activity>
     </application>
 
 </manifest>

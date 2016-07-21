@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="viaImage">
+        <attr name="shapeType" format="integer" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        />
+    </declare-styleable>
+</resources>

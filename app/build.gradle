@@ -17,12 +17,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets { main { java.srcDirs = ['src/main/java', 'src/main/java/com/farina/subelement'] } }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+        sourceSets { main { java.srcDirs = ['src/main/java', 'src/main/java/com/farina/subelement'] } }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
-    provided files('libs/farinaimagelib.jar')
+    compile files('libs/butterknife-5.0.0.jar')
+    compile 'com.android.support:support-v4:23.1.1'
+    compile project(':farinaimagelib')
+    compile project(':farinatoastlib')
 }
+

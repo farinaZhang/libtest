@@ -2,11 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<com.farina.component.LoadAndSigned
-    android:id="@+id/load_view"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<android.support.v4.view.ViewPager
+    android:id="@+id/view_flipper"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1dip"
+    android:src="@color/partLine"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical">
+    <TextView android:id="@+id/contact"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="联系人"
+        android:textSize="@dimen/font_size_normal"/>
+    <TextView android:id="@+id/hip"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="消息"
+        android:textSize="@dimen/font_size_normal"/>
+</LinearLayout>
 
 </LinearLayout>

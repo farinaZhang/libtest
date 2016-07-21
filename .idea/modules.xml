@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/farinaimagelib/farinaimagelib.iml" filepath="$PROJECT_DIR$/farinaimagelib/farinaimagelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/farinatoastlib/farinatoastlib.iml" filepath="$PROJECT_DIR$/farinatoastlib/farinatoastlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/libtest.iml" filepath="$PROJECT_DIR$/libtest.iml" />
     </modules>
   </component>

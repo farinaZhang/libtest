@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myXML="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layoutDirection="ltr">
+
+    <com.farina.farinaimagelib.ViaImageView
+        android:id="@+id/user_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        myXML:shapeType="2"
+        myXML:borderWidth="1dip"
+        myXML:borderColor="#ff0000"
+        android:src="@mipmap/user_img" />
+
+        <!--<ImageView
+            android:id="@+id/user_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/user_img" />-->
+
+        <TextView android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding"
+            android:background="@android:color/holo_green_light"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@android:color/black"
+            android:text="11111111111111111111111111111111111112221111111"/>
+</LinearLayout>
+</LinearLayout>

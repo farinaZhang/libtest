@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myXML="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/view_padding">
+    <com.farina.farinaimagelib.ViaImageView
+        android:id="@+id/member_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        myXML:shapeType="2"
+        myXML:borderWidth="1dip"
+        myXML:borderColor="#ff0000"
+        android:src="@mipmap/user_img"
+        />
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/font_size_normal"
+        android:gravity="center_vertical"
+        android:text="name"/>
+    </LinearLayout>
+</LinearLayout>

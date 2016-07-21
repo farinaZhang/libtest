@@ -4,4 +4,17 @@
     <string name="load_input_password">请输入用户密码</string>
     <string name="signin">登录</string>
     <string name="load">点击注册</string>
+    <string name="binding_user_info">绑定信息</string>
+    <string name="change_pic">更改头像</string>
+    <string name="other_style">其他样式</string>
+    <string name="user_info">用户信息</string>
+    <string name="back">返回</string>
+    <string name="user_count">账号:</string>
+    <string name="phone_number">手机号:</string>
+    <string name="mail_number">邮箱账号:</string>
+    <string name="qq_number">qq帐号:</string>
+    <string name="weixin_number">微信帐号:</string>
+    <string name="merge_contact">合并联系人</string>
+    <string name="from_location">从本地相册加载</string>
+    <string name="from_service">从网络端加载</string>
 </resources>

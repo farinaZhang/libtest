@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="partLine">#37A2FF</color>
+    <color name="division_line_color">#bfbfbf</color>
+
+    <color name="text_btn_pressed">#33d0d0</color>
+    <color name="text_btn_normal">#ffffff</color>
 </resources>

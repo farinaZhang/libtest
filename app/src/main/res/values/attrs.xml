@@ -1,4 +1,12 @@
 <resources>
+   <!-- <declare-styleable name="viaImage">
+        <attr name="shapeType" format="integer" />
+        <attr name="borderWidth" format="integer" />
+        <attr name="borderColor" format="color" />
+        />
+    </declare-styleable>-->
+
+
     <declare-styleable name="MyView">
         <attr name="exampleString" format="string" />
         <attr name="exampleDimension" format="dimension" />

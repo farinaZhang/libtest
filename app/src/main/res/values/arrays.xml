@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shaparray">
+        <item>圆形</item>
+        <item>三角形</item>
+        <item>五角星形</item>
+        <item>正六边形</item>
+        <item>矩形</item>
+    </string-array>
+
+    <string-array name="borderWeight">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="borderColor">
+        <item>黑色</item>
+        <item>红色</item>
+        <item>蓝色</item>
+    </string-array>
+
+</resources>

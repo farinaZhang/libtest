@@ -26,6 +26,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
 
+
+/*
 task makeJar(type: Copy) {
     delete 'build/libs/farinaimagelib.jar'
     from('build/intermediates/bundles/release/')
@@ -35,5 +37,8 @@ task makeJar(type: Copy) {
 }
 
 makeJar.dependsOn(build)
+
 //在终端执行生成JAR包
 // gradlew makeJar
+
+*/

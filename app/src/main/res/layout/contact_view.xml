@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myXML="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout  android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+        <com.farina.farinaimagelib.ViaImageView
+            android:id="@+id/user_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/view_padding"
+            myXML:shapeType="2"
+            myXML:borderWidth="1dip"
+            myXML:borderColor="#ff0000"
+            android:src="@mipmap/user_img"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联系人"
+            android:textSize="@dimen/font_size_large"/>
+        <TextView android:id="@+id/add"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_normal"
+            android:text="添加"/>
+    </RelativeLayout>
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/partLine"/>
+    <ExpandableListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
